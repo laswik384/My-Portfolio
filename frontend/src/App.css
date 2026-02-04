@@ -225,13 +225,13 @@ body {
 }
 
 .btn-primary {
-  background: var(--brand-primary);
-  color: #000000;
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
+  color: #FFFFFF;
   border: none;
-  border-radius: 0;
+  border-radius: 8px;
   padding: 14px 28px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
   min-height: 56px;
@@ -242,13 +242,13 @@ body {
   gap: 8px;
   line-height: 1.2;
   letter-spacing: 0;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
 }
 
 .btn-primary:hover {
-  background: var(--brand-hover);
-  color: var(--brand-primary);
+  background: linear-gradient(135deg, var(--brand-active), var(--brand-primary));
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 255, 209, 0.3);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.5);
 }
 
 .btn-secondary {
