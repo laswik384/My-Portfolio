@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 import Spline from '@splinetool/react-spline';
 
 const Hero = () => {
@@ -9,34 +9,40 @@ const Hero = () => {
         {/* Left Content */}
         <div className="hero-content">
           <div className="hero-badge">
+            <Sparkles size={16} style={{ display: 'inline', marginRight: '8px' }} />
             Frontend / Web Developer
           </div>
           
           <h1 className="hero-title">
-            Hi, I'm <span className="text-gradient">Satya Laswik Pakki</span>
+            Hi, I'm{' '}
+            <span className="text-gradient">
+              Satya Laswik Pakki
+            </span>
           </h1>
           
           <p className="hero-subtitle">
             Building responsive, scalable, and high-performance web experiences
+            with cutting-edge technologies and modern design principles
           </p>
           
           <div className="hero-buttons">
             <a href="#projects" className="btn-primary">
-              View Projects
+              View My Work
               <ArrowRight size={20} />
             </a>
             <a href="#connect" className="btn-secondary">
-              Connect With Me
+              Let's Connect
             </a>
           </div>
 
           {/* Floating Tech Icons */}
           <div className="tech-icons">
-            <div className="tech-icon" style={{ animationDelay: '0s' }}>HTML</div>
-            <div className="tech-icon" style={{ animationDelay: '0.2s' }}>CSS</div>
-            <div className="tech-icon" style={{ animationDelay: '0.4s' }}>JS</div>
+            <div className="tech-icon" style={{ animationDelay: '0s' }}>HTML5</div>
+            <div className="tech-icon" style={{ animationDelay: '0.2s' }}>CSS3</div>
+            <div className="tech-icon" style={{ animationDelay: '0.4s' }}>JavaScript</div>
             <div className="tech-icon" style={{ animationDelay: '0.6s' }}>React</div>
             <div className="tech-icon" style={{ animationDelay: '0.8s' }}>TypeScript</div>
+            <div className="tech-icon" style={{ animationDelay: '1s' }}>Tailwind</div>
           </div>
         </div>
 

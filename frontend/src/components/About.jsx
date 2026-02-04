@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code2, Palette, Rocket } from 'lucide-react';
+import { Code2, Palette, Rocket, Zap } from 'lucide-react';
 
 const About = () => {
   return (
@@ -12,31 +12,35 @@ const About = () => {
       <div className="about-grid">
         <div className="about-card glass-card">
           <div className="about-icon">
-            <Code2 size={32} />
+            <Code2 size={36} />
           </div>
-          <h3 className="about-card-title">Frontend Development</h3>
+          <h3 className="about-card-title">Frontend Expert</h3>
           <p className="about-card-text">
-            Dynamic Frontend Developer at Talentivid Pvt Ltd with strong expertise in HTML, CSS, JavaScript, TypeScript, React, AngularJS, Bootstrap, and Tailwind CSS.
+            Dynamic Frontend Developer at Talentivid Pvt Ltd with deep expertise in
+            HTML, CSS, JavaScript, TypeScript, React, and AngularJS. Crafting pixel-perfect
+            interfaces with Bootstrap and Tailwind CSS.
           </p>
         </div>
 
         <div className="about-card glass-card">
           <div className="about-icon">
-            <Palette size={32} />
+            <Palette size={36} />
           </div>
-          <h3 className="about-card-title">UI/UX Design</h3>
+          <h3 className="about-card-title">UI/UX Designer</h3>
           <p className="about-card-text">
-            Experienced in building responsive, performance-driven applications with a solid foundation in UI/UX using Figma. Creating seamless user experiences is my passion.
+            Building responsive, performance-driven applications with a solid foundation
+            in UI/UX using Figma. Creating seamless user experiences that delight and engage users.
           </p>
         </div>
 
         <div className="about-card glass-card">
           <div className="about-icon">
-            <Rocket size={32} />
+            <Rocket size={36} />
           </div>
-          <h3 className="about-card-title">Clean Architecture</h3>
+          <h3 className="about-card-title">Performance Driven</h3>
           <p className="about-card-text">
-            Passionate about clean code, collaboration, and scalable frontend architecture. Building maintainable applications that stand the test of time.
+            Passionate about clean code, collaboration, and scalable frontend architecture.
+            Building maintainable, high-performance applications with modern best practices.
           </p>
         </div>
       </div>
