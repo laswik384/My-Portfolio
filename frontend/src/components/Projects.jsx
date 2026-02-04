@@ -1,25 +1,26 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 
+const projectsData = [
+  {
+    title: 'Food Munch Application',
+    description: 'Responsive restaurant web app with menu categorization, modals, navigation, and payment sections. Built with performance optimization and clean code principles.',
+    tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+    image: 'https://images.unsplash.com/photo-1760888549280-4aef010720bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwyfHxyZXN0YXVyYW50JTIwYXBwfGVufDB8fHx8MTc3MDE4NjMxNHww&ixlib=rb-4.1.0&q=85',
+    liveLink: '#',
+    codeLink: '#'
+  },
+  {
+    title: 'Baghara Khana',
+    description: 'Modern React + Vite restaurant website with reusable UI components, menu categorization, Swiggy & Zomato integration, and optimized performance.',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'JavaScript'],
+    image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwyfHx3ZWIlMjBkZXZlbG9wbWVudHxlbnwwfHx8fDE3NzAxODYzMDZ8MA&ixlib=rb-4.1.0&q=85',
+    liveLink: '#',
+    codeLink: '#'
+  }
+];
+
 const Projects = () => {
-  const projects = [
-    {
-      title: 'Food Munch Application',
-      description: 'Responsive restaurant web app with menu categorization, modals, navigation, and payment sections. Built with performance optimization and clean code principles.',
-      tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-      image: 'https://images.unsplash.com/photo-1760888549280-4aef010720bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwyfHxyZXN0YXVyYW50JTIwYXBwfGVufDB8fHx8MTc3MDE4NjMxNHww&ixlib=rb-4.1.0&q=85',
-      liveLink: '#',
-      codeLink: '#'
-    },
-    {
-      title: 'Baghara Khana',
-      description: 'Modern React + Vite restaurant website with reusable UI components, menu categorization, Swiggy & Zomato integration, and optimized performance.',
-      tech: ['React', 'Vite', 'Tailwind CSS', 'JavaScript'],
-      image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwyfHx3ZWIlMjBkZXZlbG9wbWVudHxlbnwwfHx8fDE3NzAxODYzMDZ8MA&ixlib=rb-4.1.0&q=85',
-      liveLink: '#',
-      codeLink: '#'
-    }
-  ];
 
   return (
     <section id="projects" className="section-container">
