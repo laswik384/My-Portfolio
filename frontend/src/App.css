@@ -966,26 +966,6 @@ body::after {
   z-index: 2;
 }
 
-/* 3D Illustration for Contact Section */
-.contact-3d-illustration {
-  position: absolute;
-  top: -10%;
-  right: -5%;
-  width: 500px;
-  height: 500px;
-  opacity: 0.08;
-  z-index: 0;
-  pointer-events: none;
-  animation: rotate3d 40s linear infinite;
-}
-
-.contact-3d-illustration img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  filter: blur(3px);
-}
-
 .contact-form-wrapper {
   padding: 50px;
 }
