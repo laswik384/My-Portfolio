@@ -580,6 +580,28 @@ body::before {
   gap: 50px;
   max-width: 1000px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* 3D Decoration for Experience Section */
+.section-3d-decoration {
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  width: 400px;
+  height: 400px;
+  opacity: 0.12;
+  z-index: 0;
+  pointer-events: none;
+  animation: floatSlow 25s ease-in-out infinite;
+}
+
+.section-3d-decoration img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: blur(2px);
 }
 
 .experience-card {
