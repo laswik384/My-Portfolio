@@ -285,9 +285,9 @@ body {
 
 .tech-icon {
   padding: 8px 16px;
-  background: var(--bg-overlay);
+  background: var(--bg-secondary);
   border: 1px solid var(--border-subtle);
-  border-radius: 0;
+  border-radius: 20px;
   font-size: 14px;
   font-weight: 500;
   color: var(--text-secondary);
