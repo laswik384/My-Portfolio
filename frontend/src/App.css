@@ -614,9 +614,9 @@ body {
 
 .skill-badge {
   padding: 16px 24px;
-  background: var(--bg-overlay);
+  background: var(--bg-secondary);
   border: 1px solid var(--border-subtle);
-  border-radius: 0;
+  border-radius: 30px;
   font-size: 16px;
   font-weight: 500;
   color: var(--text-primary);
@@ -637,10 +637,11 @@ body {
 }
 
 .skill-badge:hover {
-  background: var(--brand-primary);
-  color: #000000;
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
+  color: #FFFFFF;
   transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 8px 24px rgba(0, 255, 209, 0.3);
+  box-shadow: 0 8px 24px rgba(255, 107, 53, 0.4);
+  border-color: transparent;
 }
 
 /* ========== CONNECT SECTION ========== */
