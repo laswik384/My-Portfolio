@@ -1,34 +1,6 @@
 import React from 'react';
 import { Briefcase, Calendar } from 'lucide-react';
-
-const experiencesData = [
-  {
-    title: 'Frontend Developer',
-    company: 'Talentivid Pvt Ltd',
-    location: 'Hyderabad, India',
-    period: 'Oct 2024 – Present',
-    responsibilities: [
-      'Responsive and scalable UI components',
-      'Mobile-first, high-performance web apps',
-      'Cross-browser compatibility',
-      'API integration and UI/UX collaboration',
-      'Performance optimization and clean code'
-    ]
-  },
-  {
-    title: 'Frontend Development with UI/UX',
-    company: 'Baghara Khana',
-    location: 'Hyderabad, India',
-    period: 'Jan 2026',
-    responsibilities: [
-      'React + Vite restaurant website',
-      'Reusable UI components',
-      'Menu categorization & highlights',
-      'Swiggy & Zomato integration',
-      'Performance optimization'
-    ]
-  }
-];
+import { experiencesData } from '../data/portfolioData';
 
 const Experience = () => {
 
