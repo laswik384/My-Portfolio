@@ -29,7 +29,7 @@ const Skills = () => {
       </div>
 
       <div className="skills-container">
-        {skillCategories.map((category, index) => (
+        {skillsData.map((category, index) => (
           <div key={index} className="skill-category">
             <h3 className="skill-category-title">{category.category}</h3>
             <div className="skills-cloud">
