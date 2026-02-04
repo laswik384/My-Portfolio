@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code2, Palette, Rocket, Zap } from 'lucide-react';
+import { Code2, Palette, Rocket } from 'lucide-react';
 
 const About = () => {
   return (
@@ -11,6 +11,13 @@ const About = () => {
 
       <div className="about-grid">
         <div className="about-card glass-card">
+          {/* 3D Background Illustration */}
+          <div className="card-3d-bg">
+            <img 
+              src="https://images.unsplash.com/photo-1645752401638-f3f4fe759b7a?w=600&q=80" 
+              alt="3D Abstract"
+            />
+          </div>
           <div className="about-icon">
             <Code2 size={36} />
           </div>
@@ -23,6 +30,13 @@ const About = () => {
         </div>
 
         <div className="about-card glass-card">
+          {/* 3D Background Illustration */}
+          <div className="card-3d-bg">
+            <img 
+              src="https://images.unsplash.com/photo-1645752401632-00bcd27ae93b?w=600&q=80" 
+              alt="3D Purple"
+            />
+          </div>
           <div className="about-icon">
             <Palette size={36} />
           </div>
@@ -34,6 +48,13 @@ const About = () => {
         </div>
 
         <div className="about-card glass-card">
+          {/* 3D Background Illustration */}
+          <div className="card-3d-bg">
+            <img 
+              src="https://images.unsplash.com/photo-1708395110304-91fbddb066bf?w=600&q=80" 
+              alt="3D Floating"
+            />
+          </div>
           <div className="about-icon">
             <Rocket size={36} />
           </div>

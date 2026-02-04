@@ -4,6 +4,14 @@ import { Briefcase, Calendar } from 'lucide-react';
 const Experience = () => {
   return (
     <section id="experience" className="section-container">
+      {/* Floating 3D Illustration */}
+      <div className="section-3d-decoration">
+        <img 
+          src="https://images.unsplash.com/photo-1714992187587-1201196a735b?w=500&q=80" 
+          alt="3D Tech Pattern"
+        />
+      </div>
+
       <div className="section-header">
         <h2 className="section-title">Experience</h2>
         <div className="section-divider"></div>
