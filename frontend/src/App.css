@@ -903,36 +903,6 @@ body::after {
   z-index: 2;
 }
 
-/* 3D Decorations for Skills Section */
-.skills-3d-decoration {
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  opacity: 0.1;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.skills-3d-decoration img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  filter: blur(2px);
-}
-
-.skills-3d-left {
-  top: 20%;
-  left: -10%;
-  animation: floatSlow 22s ease-in-out infinite;
-}
-
-.skills-3d-right {
-  bottom: 10%;
-  right: -8%;
-  animation: floatSlow 28s ease-in-out infinite;
-  animation-delay: 5s;
-}
-
 .skill-category {
   text-align: center;
 }
