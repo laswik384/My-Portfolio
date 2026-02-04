@@ -30,7 +30,7 @@ const Projects = () => {
       </div>
 
       <div className="projects-grid">
-        {projects.map((project, index) => (
+        {projectsData.map((project, index) => (
           <div key={index} className="project-card glass-card">
             <div className="project-image-wrapper">
               <img
