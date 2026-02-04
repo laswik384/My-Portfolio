@@ -92,7 +92,16 @@ const Connect = () => {
   ];
 
   return (
-    <section id="connect" className="section-container\">\n      {/* 3D Illustration for Contact Section */}\n      <div className=\"contact-3d-illustration\">\n        <img \n          src=\"https://images.unsplash.com/photo-1645752401632-00bcd27ae93b?w=600&q=80\" \n          alt=\"3D Contact\"\n        />\n      </div>\n\n      <div className=\"section-header\">"
+    <section id="connect" className="section-container">
+      {/* 3D Illustration for Contact Section */}
+      <div className="contact-3d-illustration">
+        <img 
+          src="https://images.unsplash.com/photo-1645752401632-00bcd27ae93b?w=600&q=80" 
+          alt="3D Contact"
+        />
+      </div>
+
+      <div className="section-header">"
         <h2 className="section-title">Connect With Me</h2>
         <div className="section-divider"></div>
       </div>
