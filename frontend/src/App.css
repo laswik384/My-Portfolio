@@ -787,17 +787,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--bg-overlay);
+  background: var(--bg-secondary);
   border: 1px solid var(--border-subtle);
+  border-radius: 12px;
   color: var(--text-primary);
   transition: all 0.4s ease;
 }
 
 .social-link:hover {
-  background: var(--brand-primary);
-  color: #000000;
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
+  color: #FFFFFF;
+  border-color: transparent;
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 255, 209, 0.3);
+  box-shadow: 0 8px 24px rgba(255, 107, 53, 0.4);
 }
 
 /* ========== FOOTER ========== */
