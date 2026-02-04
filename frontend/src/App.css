@@ -845,15 +845,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--bg-overlay);
+  background: var(--bg-secondary);
   border: 1px solid var(--border-subtle);
+  border-radius: 8px;
   color: var(--text-primary);
   transition: all 0.3s ease;
 }
 
 .footer-link:hover {
   background: var(--brand-primary);
-  color: #000000;
+  color: #FFFFFF;
+  border-color: transparent;
 }
 
 .footer-bottom {
