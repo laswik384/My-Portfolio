@@ -343,17 +343,18 @@ body {
 
 /* Glass Card Effect */
 .glass-card {
-  background: var(--bg-overlay);
+  background: var(--bg-secondary);
   border: 1px solid var(--border-subtle);
   backdrop-filter: blur(10px);
-  border-radius: 0;
+  border-radius: 12px;
   transition: all 0.4s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .glass-card:hover {
   border-color: var(--border-medium);
   transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0, 255, 209, 0.15);
+  box-shadow: 0 12px 40px rgba(255, 107, 53, 0.2);
 }
 
 /* ========== ABOUT SECTION ========== */
