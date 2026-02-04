@@ -68,6 +68,59 @@ async def get_status_checks():
     
     return status_checks
 
+# Contact Form Endpoints
+@api_router.post("/contact", response_model=ContactFormResponse)
+async def submit_contact_form(contact: ContactFormCreate, request: Request):
+    """
+    Submit a contact form and send email notification
+    """
+    try:
+        # Get request metadata
+        ip_address = request.client.host if request.client else None
+        user_agent = request.headers.get('user-agent', None)
+        
+        # Create submission object
+        submission = ContactFormSubmission(
+            name=contact.name,
+            email=contact.email,
+            message=contact.message,
+            ip_address=ip_address,
+            user_agent=user_agent
+        )
+        
+        # Save to database
+        await db.contact_submissions.insert_one(submission.dict())
+        logger.info(f"Contact form submitted by {contact.email}")
+        
+        # Send email via EmailJS
+        email_result = email_service.send_contact_form_email(
+            name=contact.name,
+            email=contact.email,
+            message=contact.message
+        )
+        
+        return ContactFormResponse(
+            success=True,
+            message="Thank you for your message! I'll get back to you soon.",
+            submission_id=submission.id
+        )
+        
+    except Exception as e:
+        logger.error(f"Error processing contact form: {str(e)}")
+        raise HTTPException(status_code=500, detail="Failed to process contact form")
+
+@api_router.get("/contact/submissions", response_model=List[ContactFormSubmission])
+async def get_contact_submissions(limit: int = 50):
+    """
+    Get all contact form submissions (for admin use)
+    """
+    try:
+        submissions = await db.contact_submissions.find().sort('created_at', -1).to_list(limit)
+        return [ContactFormSubmission(**sub) for sub in submissions]
+    except Exception as e:
+        logger.error(f"Error fetching submissions: {str(e)}")
+        raise HTTPException(status_code=500, detail="Failed to fetch submissions")
+
 # Include the router in the main app
 app.include_router(api_router)
 
