@@ -1,21 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Dark Theme Colors */
-  --bg-primary: #000000;
-  --bg-secondary: #121212;
-  --bg-overlay: rgba(255, 255, 255, 0.1);
+  /* Modern Dark Blue Theme */
+  --bg-primary: #0A0E27;
+  --bg-secondary: #151B3B;
+  --bg-overlay: rgba(255, 107, 53, 0.08);
   
   --text-primary: #FFFFFF;
-  --text-secondary: rgba(255, 255, 255, 0.85);
-  --text-muted: #4D4D4D;
+  --text-secondary: #E8E9F3;
+  --text-muted: #8B92B0;
   
-  --border-subtle: rgba(255, 255, 255, 0.25);
-  --border-medium: rgba(255, 255, 255, 0.4);
+  --border-subtle: rgba(255, 107, 53, 0.2);
+  --border-medium: rgba(255, 107, 53, 0.4);
   
-  --brand-primary: #00FFD1;
-  --brand-hover: rgba(0, 255, 209, 0.1);
-  --brand-active: #6FD2C0;
+  --brand-primary: #FF6B35;
+  --brand-secondary: #F7931E;
+  --brand-hover: rgba(255, 107, 53, 0.15);
+  --brand-active: #FF8555;
 }
 
 * {
