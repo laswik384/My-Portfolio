@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Send, Mail, MapPin, Linkedin, Github, MessageSquare } from 'lucide-react';
 import { useToast } from '../hooks/use-toast';
 
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
+
 const Connect = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -22,15 +25,35 @@ const Connect = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Mock submission - will be replaced with EmailJS
-    setTimeout(() => {
-      toast({
-        title: "Message Sent!",
-        description: "Thank you for reaching out. I'll get back to you soon!",
+    try {
+      const response = await fetch(`${API}/contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
       });
-      setFormData({ name: '', email: '', message: '' });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        toast({
+          title: "Message Sent! ✅",
+          description: data.message || "Thank you for reaching out. I'll get back to you soon!",
+        });
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        throw new Error(data.detail || 'Failed to send message');
+      }
+    } catch (error) {
+      toast({
+        title: "Error ❌",
+        description: error.message || "Failed to send message. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const contactInfo = [
