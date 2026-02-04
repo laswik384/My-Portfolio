@@ -1,26 +1,9 @@
 import React from 'react';
 import { ArrowRight, Sparkles } from 'lucide-react';
-import Spline from '@splinetool/react-spline';
 
 const Hero = () => {
   return (
     <section id="home" className="hero-section">
-      {/* Floating 3D Illustrations in Background */}
-      <div className="floating-illustration floating-illustration-1">
-        <img 
-          src="https://images.unsplash.com/photo-1645097114684-28afb6d41c8d?w=400&q=80" 
-          alt="3D Object"
-          style={{ opacity: 0.15, filter: 'blur(1px)' }}
-        />
-      </div>
-      <div className="floating-illustration floating-illustration-2">
-        <img 
-          src="https://images.unsplash.com/photo-1649702901563-33dd7dffb931?w=400&q=80" 
-          alt="3D Geometric"
-          style={{ opacity: 0.1, filter: 'blur(2px)' }}
-        />
-      </div>
-
       <div className="hero-container">
         {/* Left Content */}
         <div className="hero-content">
@@ -62,18 +45,83 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right 3D Scene - Beautiful floating abstract object */}
+        {/* Right 3D Visual - Premium Developer Scene */}
         <div className="hero-3d">
-          <div className="spline-container">
-            <Spline scene="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
+          {/* 3D Floating Code Cards */}
+          <div className="code-cards-scene">
+            {/* Card 1 - React Component */}
+            <div className="code-card card-1">
+              <div className="code-card-header">
+                <div className="dot dot-red"></div>
+                <div className="dot dot-yellow"></div>
+                <div className="dot dot-green"></div>
+              </div>
+              <div className="code-content">
+                <span className="code-purple">const</span> <span className="code-blue">Portfolio</span> = () =&gt; {'{'}
+                <br/>
+                  &nbsp;&nbsp;<span className="code-purple">return</span> (
+                <br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span className="code-green">div</span>&gt;
+                <br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="code-gray">&lt;!-- Magic --&gt;</span>
+                <br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span className="code-green">div</span>&gt;
+                <br/>
+                  &nbsp;&nbsp;)
+                <br/>
+                {'}'}
+              </div>
+            </div>
+
+            {/* Card 2 - CSS Styles */}
+            <div className="code-card card-2">
+              <div className="code-card-header">
+                <div className="dot dot-red"></div>
+                <div className="dot dot-yellow"></div>
+                <div className="dot dot-green"></div>
+              </div>
+              <div className="code-content">
+                <span className="code-purple">.hero</span> {'{'}
+                <br/>
+                  &nbsp;&nbsp;<span className="code-blue">display</span>: flex;
+                <br/>
+                  &nbsp;&nbsp;<span className="code-blue">background</span>: gradient;
+                <br/>
+                  &nbsp;&nbsp;<span className="code-blue">animation</span>: fade-in;
+                <br/>
+                {'}'}
+              </div>
+            </div>
+
+            {/* Card 3 - API Response */}
+            <div className="code-card card-3">
+              <div className="code-card-header">
+                <div className="dot dot-red"></div>
+                <div className="dot dot-yellow"></div>
+                <div className="dot dot-green"></div>
+              </div>
+              <div className="code-content">
+                {'{'}
+                <br/>
+                  &nbsp;&nbsp;<span className="code-purple">"status"</span>: <span className="code-green">"success"</span>,
+                <br/>
+                  &nbsp;&nbsp;<span className="code-purple">"data"</span>: {'{'}
+                <br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span className="code-purple">"projects"</span>: <span className="code-orange">50</span>
+                <br/>
+                  &nbsp;&nbsp;{'}'}
+                <br/>
+                {'}'}
+              </div>
+            </div>
           </div>
-          {/* Additional 3D Illustration */}
-          <div className="hero-3d-illustration">
-            <img 
-              src="https://images.unsplash.com/photo-1644849179736-13def14ef978?w=600&q=80" 
-              alt="3D Gradient"
-              style={{ opacity: 0.6, mixBlendMode: 'screen' }}
-            />
+
+          {/* 3D Floating Tech Icons with Depth */}
+          <div className="floating-tech-icons">
+            <div className="tech-sphere sphere-1">React</div>
+            <div className="tech-sphere sphere-2">TS</div>
+            <div className="tech-sphere sphere-3">CSS</div>
+            <div className="tech-sphere sphere-4">JS</div>
           </div>
         </div>
       </div>
