@@ -62,10 +62,10 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right 3D Scene - Changed to different object */}
+        {/* Right 3D Scene - Changed to better abstract 3D object */}
         <div className="hero-3d">
           <div className="spline-container">
-            <Spline scene="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
+            <Spline scene="https://prod.spline.design/V8stupBAjPtJlMSG/scene.splinecode" />
           </div>
           {/* Additional 3D Illustration */}
           <div className="hero-3d-illustration">
