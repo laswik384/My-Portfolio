@@ -1,23 +1,5 @@
 import React from 'react';
-
-const skillsData = [
-  {
-    category: 'Frontend',
-    skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'AngularJS', 'Bootstrap', 'Tailwind CSS']
-  },
-  {
-    category: 'Backend & Programming',
-    skills: ['Python', 'Node.js', 'SQLite']
-  },
-  {
-    category: 'UI/UX Tools',
-    skills: ['Figma']
-  },
-  {
-    category: 'Soft Skills',
-    skills: ['Effective Communication', 'MS Office']
-  }
-];
+import { skillsData } from '../data/portfolioData';
 
 const Skills = () => {
 
