@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/My-Portfolio/static/css/main.7fa8f3f0.css",
+    "main.js": "/My-Portfolio/static/js/main.8b2ae860.js",
+    "static/media/Baghara_Khana.png": "/My-Portfolio/static/media/Baghara_Khana.b031ba1bf262448a92fe.png",
+    "static/media/Food_Munch.jpeg": "/My-Portfolio/static/media/Food_Munch.cdc72113557834ba4b5e.jpeg",
+    "index.html": "/My-Portfolio/index.html",
+    "main.7fa8f3f0.css.map": "/My-Portfolio/static/css/main.7fa8f3f0.css.map",
+    "main.8b2ae860.js.map": "/My-Portfolio/static/js/main.8b2ae860.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7fa8f3f0.css",
+    "static/js/main.8b2ae860.js"
+  ]
+}
