@@ -37,34 +37,6 @@ const Experience = () => {
             <li>Performance optimization and clean code</li>
           </ul>
         </div>
-
-        <div className="experience-card glass-card">
-          <div className="experience-header">
-            <div className="experience-icon">
-              <Briefcase size={24} />
-            </div>
-            <div>
-              <h3 className="experience-title">Frontend Development with UI/UX</h3>
-              <p className="experience-company">Baghara Khana</p>
-            </div>
-          </div>
-
-          <div className="experience-meta">
-            <span className="experience-period">
-              <Calendar size={16} />
-              Jan 2026
-            </span>
-            <span className="experience-location">Hyderabad, India</span>
-          </div>
-
-          <ul className="experience-list">
-            <li>React + Vite restaurant website</li>
-            <li>Reusable UI components</li>
-            <li>Menu categorization & highlights</li>
-            <li>Swiggy & Zomato integration</li>
-            <li>Performance optimization</li>
-          </ul>
-        </div>
       </div>
     </section>
   );

@@ -12,14 +12,14 @@ const Footer = () => {
 
         <div className="footer-social">
           <a
-            href="mailto:satya@example.com"
+            href="mailto:laswikpakki07@gmail.com"
             className="footer-link"
             aria-label="Email"
           >
             <Mail size={20} />
           </a>
           <a
-            href="https://www.linkedin.com/in/satya-laswik-pakki"
+            href="https://www.linkedin.com/in/laswik-pakki/"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link"
@@ -28,7 +28,7 @@ const Footer = () => {
             <Linkedin size={20} />
           </a>
           <a
-            href="#"
+            href="https://github.com/laswik384"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link"

@@ -1,5 +1,7 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
+import FoodMunch from '../assets/Food_Munch.jpeg';
+import BagharaKhana from '../assets/Baghara_Khana.png';
 
 const Projects = () => {
   return (
@@ -13,7 +15,7 @@ const Projects = () => {
         <div className="project-card glass-card">
           <div className="project-image-wrapper">
             <img
-              src="https://images.unsplash.com/photo-1760888549280-4aef010720bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwyfHxyZXN0YXVyYW50JTIwYXBwfGVufDB8fHx8MTc3MDE4NjMxNHww&ixlib=rb-4.1.0&q=85"
+              src={FoodMunch}
               alt="Food Munch Application"
               className="project-image"
             />
@@ -45,12 +47,12 @@ const Projects = () => {
         <div className="project-card glass-card">
           <div className="project-image-wrapper">
             <img
-              src="https://images.unsplash.com/photo-1547658719-da2b51169166?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwyfHx3ZWIlMjBkZXZlbG9wbWVudHxlbnwwfHx8fDE3NzAxODYzMDZ8MA&ixlib=rb-4.1.0&q=85"
+              src={BagharaKhana}
               alt="Baghara Khana"
               className="project-image"
             />
             <div className="project-overlay">
-              <a href="#" className="project-link" aria-label="View live">
+              <a href="https://bagharakhana.onrender.com/" className="project-link" aria-label="View live">
                 <ExternalLink size={24} />
               </a>
               <a href="#" className="project-link" aria-label="View code">

@@ -60,7 +60,7 @@ const Connect = () => {
     {
       icon: <MapPin size={20} />,
       label: 'Location',
-      value: 'Hyderabad, India'
+      value: 'Vizag, AP, India'
     },
     {
       icon: <Mail size={20} />,
