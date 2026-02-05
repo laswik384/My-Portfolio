@@ -38,12 +38,6 @@ const Footer = () => {
           </a>
         </div>
       </div>
-
-      <div className="footer-bottom">
-        <p className="footer-copyright">
-          © 2026 Satya Laswik Pakki. Built with <Heart size={16} className="footer-heart" /> and passion.
-        </p>
-      </div>
     </footer>
   );
 };

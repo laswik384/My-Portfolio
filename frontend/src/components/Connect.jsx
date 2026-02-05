@@ -65,8 +65,8 @@ const Connect = () => {
     {
       icon: <Mail size={20} />,
       label: 'Email',
-      value: 'satya@example.com',
-      link: 'mailto:satya@example.com'
+      value: 'laswikpakki07@gmail.com',
+      link: 'mailto:laswikpakki07@gmail.com'
     }
   ];
 
@@ -74,34 +74,26 @@ const Connect = () => {
     {
       icon: <Linkedin size={24} />,
       label: 'LinkedIn',
-      link: 'https://www.linkedin.com/in/satya-laswik-pakki',
+      link: 'https://www.linkedin.com/in/laswik-pakki/',
       color: '#0A66C2'
     },
     {
       icon: <Github size={24} />,
       label: 'GitHub',
-      link: '#',
+      link: 'https://github.com/laswik384',
       color: '#FFFFFF'
     },
     {
       icon: <MessageSquare size={24} />,
       label: 'WhatsApp',
-      link: '#',
+      link: 'https://wa.me/916305542738',
       color: '#25D366'
     }
   ];
 
   return (
     <section id="connect" className="section-container">
-      {/* 3D Illustration for Contact Section */}
-      <div className="contact-3d-illustration">
-        <img 
-          src="https://images.unsplash.com/photo-1645752401632-00bcd27ae93b?w=600&q=80" 
-          alt="3D Contact"
-        />
-      </div>
-
-      <div className="section-header">"
+      <div className="section-header">
         <h2 className="section-title">Connect With Me</h2>
         <div className="section-divider"></div>
       </div>
